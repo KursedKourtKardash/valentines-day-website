@@ -1,1 +1,99 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbe3e4;
+  color: #333;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #d94e7e;
+}
+
+#home-page {
+  position: relative;
+  padding: 50px;
+}
+
+.cat-animation {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: moveCat 3s ease-in-out infinite;
+}
+
+@keyframes moveCat {
+  0% { left: 10%; }
+  50% { left: 40%; }
+  100% { left: 10%; }
+}
+
+#black-cat, #ginger-cat {
+  width: 100px;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+#ginger-cat {
+  top: 0;
+}
+
+#message {
+  margin-top: 20px;
+}
+
+/* Floating Letters */
+#floating-letters {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.letter {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.letter:hover {
+  color: #e74c3c;
+}
+
+#videos iframe {
+  margin: 20px;
+  border: none;
+}
+
+/* Styling for Songs List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e74c3c;
+}
+
+/* Custom Animations */
+@keyframes popHearts {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Audio Player */
+#bg-music {
+  display: none;
+}
 
